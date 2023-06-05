@@ -23,7 +23,7 @@ def main(pdf_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv != 3):
+    if len(sys.argv) != 3:
         print("INVALID INPUT!")
         print("USAGE:\npython src/main.py <PATH_TO_ORIGINAL_PDF> <PATH_TO_OUTPUT_PDF>")
         exit(0)
