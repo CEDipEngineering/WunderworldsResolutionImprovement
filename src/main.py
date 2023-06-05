@@ -1,6 +1,7 @@
 from PdfManipulator import PdfManipulator
 from ImageImprover import ImageImprover
 from random import randint
+import sys
 
 VERBOSE = True
 
@@ -22,6 +23,10 @@ def main(pdf_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    path = "data/Tooth_and_Claw.pdf"
-    output = "data/Tooth_and_Claw_cleaned.pdf"
+    if len(sys.argv != 3):
+        print("INVALID INPUT!")
+        print("USAGE:\npython src/main.py <PATH_TO_ORIGINAL_PDF> <PATH_TO_OUTPUT_PDF>")
+        exit(0)
+    path = sys.argv[1]
+    output = sys.argv[2]
     main(path, output)
