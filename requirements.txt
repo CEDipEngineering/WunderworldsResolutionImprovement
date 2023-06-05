@@ -1,0 +1,6 @@
+opencv-contrib-python
+matplotlib
+pdf2image
+img2pdf
+Pillow
+numpy
