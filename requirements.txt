@@ -2,3 +2,4 @@ pdf2image
 img2pdf
 Pillow
 numpy
+customtkinter

@@ -140,7 +140,7 @@ class PdfManipulator:
             file_path = os.path.join("tmp", filename)
             
             # Check if the path is a file (not a folder)
-            if os.path.isfile(file_path):
+            if os.path.isfile(file_path) and file_path != ".gitkeep":
                 try:
                     # Delete the file
                     os.remove(file_path)
